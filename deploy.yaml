@@ -11,7 +11,7 @@
        ignore_errors: yes
 
      - name: To Remove old war files
-       shell: rm -rf /opt/apache-tomcat-8.5.60/webapps/petclinic*
+       shell: rm -rf /opt/apache-tomcat-8.5.63/webapps/petclinic*
 
      - name: To copy war file
        copy:
