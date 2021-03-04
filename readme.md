@@ -205,6 +205,8 @@ Here is a list of them:
   </tr>    
 </table>
 
+## generate an ssh key as a normal user, share the key in the authorised_keys and root and as a normal user.
+
 
 # Contributing
 
