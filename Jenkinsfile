@@ -69,7 +69,7 @@ pipeline {
         }
         stage('Code Deployment'){
             steps {
-                ansiblePlaybook installation: 'ANSIBLE29', playbook: '/home/ubuntu/playbooks/deploy.yaml'
+                ansiblePlaybook disableHostKeyChecking: true, installation: 'ANSIBLE29', inventory: '/opt/inventory.txt', playbook: '/home/ubuntu/playbooks/deploy.yaml'
             }
         }
     }
