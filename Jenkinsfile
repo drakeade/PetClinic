@@ -1,4 +1,4 @@
-pipeline {
+
     
     agent {
         label 'worker-node-1'
