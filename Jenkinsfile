@@ -1,7 +1,7 @@
 pipeline {
     
     agent {
-        label 'worker-node-1'
+        label 'test'
     }
     
     tools {
@@ -47,7 +47,7 @@ pipeline {
                         SCANNER_HOME = tool 'sonarscanner'
                     }
                     steps {
-                        withSonarQubeEnv (installationName: 'sonarqube') {
+                        withSonarQubeEnv (installationName: 'sq1') {
                             sh "${SCANNER_HOME}/bin/sonar-scanner -Dproject.settings=sonar-project.properties"
                         }
                     }
