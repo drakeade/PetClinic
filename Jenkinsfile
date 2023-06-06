@@ -3,7 +3,11 @@ pipeline {
     agent {
         label 'test'
     }
-  
+   
+    tools {
+           label 'maven'
+           label 'java'
+    }
     options {
         buildDiscarder logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '10')
         disableConcurrentBuilds()
